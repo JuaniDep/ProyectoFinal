@@ -1,0 +1,11 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Lista de blogs{% endblock %}
+
+{% block content %}
+<h1>Lista de blogs</h1>
+{% for blog in blogs %}
+    <h2>{{ blog.title }}</h2>
+    <p>{{ blog.subtitle }}</p>
+{% endfor %}
+{% endblock %}
